@@ -59,8 +59,8 @@
 	</section>
 	<section class="slide">
 		<div>
-			<h2>Me quedé sin conexión</h2>
-			<p align="center"><img src="pictures/perro.gif"></p>
+			<h2>ups, conection dropped...</h2>
+			<p align="center"><img src="pictures/ups.gif" height="300"></p>
 		</div>
 	</section>
 	<section class="slide">
@@ -165,8 +165,49 @@
 	<section class="slide cover">
 		<div>
 			<h2>un poco de magia <code>teamocli</code></h2>
-			<p>crear sesiones automáticamente con tmux</p>
+			<p>crfear sesiones automáticamente con tmux</p>
 			<img src="pictures/magic.jpg">
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>¿qué es teamocli?</h2>
+			<p>Herramienta para crear sesiones, ventanas y paneles en tmux usando YAML.</p>
+			<pre><code>http://teamocil.com/</code></pre>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h3><code>~/.teamocil/cuatro.yml</code></h3>
+			<pre>
+				<code>windows:</code>
+				<code>- name: "cuatro-paneles"</code>
+				<code>  root: "~/Code/sample/www"</code>
+				<code>  layout: tiled</code>
+				<code>  panes:</code>
+				<code>    - cmd: "top"</code>
+				<code>    - cmd: "tail -f /var/log/apache2/error.log"</code>
+				<code>    - cmd: "tail -f /var/log/mail.log"</code>
+				<code>    - cmd: "ping google.com"</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide cover big-white shout">
+		<div>
+			<h2>live stuff</h2>
+			<img src="pictures/ventanas.jpg" alt="">
+			<!-- photo by elycefeliz, http://www.flickr.com/photos/elycefeliz/4655570777/ -->
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>recursos</h2>
+			<ul>
+				<li><a href="http://pragprog.com/book/bhtmux/tmux">tmux: Productive Mouse-Free Development - book</a></li>
+				<li><a href="http://www.youtube.com/watch?v=wKEGA8oEWXw">tmux Quick Start - youtube</a></li>
+				<li><a href="http://teamocil.com/">http://teamocil.com/</a></li>
+				<li><a href="https://github.com/shower/shower">Showerjs</a></li>
+			</ul>
 		</div>
 	</section>
 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
