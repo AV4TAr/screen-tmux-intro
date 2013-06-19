@@ -46,9 +46,9 @@
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>intro a screen & tmux</h1>
+		<h1>intro to screen & tmux</h1>
 		<p>by @AV4TAr.</p>
-		<p><a href="en.html">see it in english</a></p>
+		<p><a href="index.html">see it in spanish</a></p>
 	</header>
 	<section class="slide cover" id="Cover">
 		<div>
@@ -66,13 +66,13 @@
 	</section>
 	<section class="slide">
 		<div>
-		<h2>¿para qué?</h2>
+		<h2>why?</h2>
 		<ul>
-			<li>muchas pantallas en una misma sesión.</li>
-			<li>muchas ventanas en una pantalla.</li>
-			<li>mantener los procesos corriendo en background.</li>
+			<li>more than one window in a session.</li>
+			<li>more than one pane in a window.</li>
+			<li>keep processes running in background.</li>
 		</ul>
-		<p class="note">"Se me cortó la conexión mientras hacía la migración" - No más :)</p>
+		<p class="note">"AHH, connection dropped during migration..." - No more :)</p>
 		</div>
 	</section>
 	<section class="slide cover shout big-white">
@@ -86,11 +86,11 @@
 		<div>
 			<h2>screen basics</h2>
 			<ul>
-				<li>iniciar: <code>~ screen</code></li>
-				<li>listar sesiones: <code>~ screen -ls</code></li>
-				<li>attach: <code>~ screen -r [numero-sesion]</code></li>
+				<li>start: <code>~ screen</code></li>
+				<li>list sessions: <code>~ screen -ls</code></li>
+				<li>attach: <code>~ screen -r [session-number]</code></li>
 			</ul>
-			<p class="note">disponible en Linux / Mac / Cygwin</p>
+			<p class="note">available for Linux / Mac / Cygwin</p>
 		</div>
 	</section>
 	<section class="slide">
@@ -98,8 +98,8 @@
 			<h2>screen basics</h2>
 			<ul>
 				<li>Prefix: <code>Ctrl-a</code></li>
-				<li>crea ventana: <code>Ctrl-a c</code></li>
-				<li>lista ventanas: <code>Ctrl-a "</code></li>
+				<li>new window: <code>Ctrl-a c</code></li>
+				<li>list windows: <code>Ctrl-a "</code></li>
 				<li>detach: <code>Ctrl-a d</code></li>
 			</ul>
 			<p class="note">quick reference <a href="http://bit.ly/screen-quick-reference" target="_blank">http://bit.ly/screen-quick-reference</a></p>
@@ -124,8 +124,8 @@
 		<div>
 			<h2>tmux</h2>
 				<ul>
-					<li>igual que screen pero mejor.</li>
-					<li class="next">cliente - servidor.</li>
+					<li>like screen but better.</li>
+					<li class="next">client - server.</li>
 				</ul>
 		</div>
 	</section>
@@ -133,12 +133,12 @@
 		<div>
 			<h2>tmux basics</h2>
 			<ul>
-				<li>iniciar: <code>~ tmux</code></li>
-				<li>listar sesiones: <code>~ tmux list-sessions</code></li>
-				<li>listar clientes conectados: <code>~ tmux list-clients</code></li>
-				<li>attach: <code>~ tmux attach-session [-t numero-sesion]</code></li>
+				<li>start: <code>~ tmux</code></li>
+				<li>list sessions: <code>~ tmux list-sessions</code></li>
+				<li>list connected clients: <code>~ tmux list-clients</code></li>
+				<li>attach: <code>~ tmux attach-session [-t session-number]</code></li>
 			</ul>
-			<p class="note">disponible en Linux / Mac / Cygwin</p>
+			<p class="note">available for Linux / Mac / Cygwin</p>
 		</div>
 	</section>
 	<section class="slide">
@@ -146,12 +146,12 @@
 			<h2>tmux basics</h2>
 			<ul>
 				<li>Prefix: <code>Ctrl-b</code></li>
-				<li>crea ventana: <code>Ctrl-b c</code></li>
-				<li class="next">dividir vertical: <code>Ctrl-b "</code></li>
-				<li class="next">dividir horizontal: <code>Ctrl-b %</code></li>
-				<li class="next">moverse de panel: <code>Ctrl-b flecha</pre></code></li>
+				<li>new window: <code>Ctrl-b c</code></li>
+				<li class="next">vertical pane split: <code>Ctrl-b "</code></li>
+				<li class="next">horizontal pane split: <code>Ctrl-b %</code></li>
+				<li class="next">move through panes: <code>Ctrl-b arrows</pre></code></li>
 				<li class="next">detach: <code>Ctrl-b d</code></li>
-				<li class="next">ayuda: <code>Ctrl-b ?</code></li>
+				<li class="next">help: <code>Ctrl-b ?</code></li>
 			</ul>
 		</div>
 	</section>
@@ -163,15 +163,14 @@
 	</section>
 	<section class="slide cover">
 		<div>
-			<h2>un poco de magia <code>teamocil</code></h2>
-			<p>crear sesiones automáticamente con tmux</p>
+			<h2>a bit of magic <code>teamocil</code></h2>
 			<img src="pictures/magic.jpg">
 		</div>
 	</section>
 	<section class="slide">
 		<div>
-			<h2>¿qué es teamocil?</h2>
-			<p>Herramienta para crear sesiones, ventanas y paneles en tmux usando YAML.</p>
+			<h2>What is teamocil?</h2>
+			<p>simple tool used to automatically create sessions, windows and panes in tmux with YAML files.</p>
 			<pre><code>http://teamocil.com/</code></pre>
 		</div>
 	</section>
@@ -191,10 +190,10 @@
 	</section>
 	<section class="slide">
 		<div>
-			<h3><code>~/.teamocil/cuatro.yml</code></h3>
+			<h3><code>~/.teamocil/four.yml</code></h3>
 			<pre>
 				<code>windows:</code>
-				<code>- name: "cuatro-paneles"</code>
+				<code>- name: "four-panes"</code>
 				<code>  root: "~/Code/sample/www"</code>
 				<code>  layout: tiled</code>
 				<code>  panes:</code>
@@ -221,12 +220,12 @@
 	</section>
 	<section class="slide">
 		<div>
-			<h2>recursos</h2>
+			<h2>resources</h2>
 			<ul>
 				<li><a href="http://pragprog.com/book/bhtmux/tmux">tmux: Productive Mouse-Free Development - book</a></li>
 				<li><a href="http://www.youtube.com/watch?v=wKEGA8oEWXw">tmux Quick Start - youtube</a></li>
 				<li><a href="http://teamocil.com/">http://teamocil.com/</a></li>
-				<li>hecho con <a href="https://github.com/shower/shower">Showerjs</a></li>
+				<li>done with <a href="https://github.com/shower/shower">Showerjs</a></li>
 			</ul>
 		</div>
 	</section>
