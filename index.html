@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -73,4 +74,243 @@ $ git checkout gh-pages
       </div>
     </div>
   </body>
+=======
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>intro a screen & tmux por Diego Sapriza</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<!--
+		To apply styles to the certain slides
+		set slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+			margin:30px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#Cover p {
+			margin:10px 0 0;
+			text-align:center;
+			color:#FFF;
+			font-style:italic;
+			font-size:20px;
+			}
+		#Cover p a {
+			color:#FFF;
+			}
+		#Picture h2 {
+			color:#FFF;
+			}
+		#SeeMore h2 {
+			font-size:100px
+			}
+		#SeeMore img {
+			width:0.72em;
+			height:0.72em;
+			}
+		.big-white h2{
+			margin:30px 0 0;
+			color:#FFF;
+			text-align:center;
+		}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>intro a screen & tmux</h1>
+		<p>by @AV4TAr.</p>
+	</header>
+	<section class="slide cover" id="Cover">
+		<div>
+			<h2>screen & tmux</h2>
+			<p>Brought you by <a href="http://twitter.com/AV4TAr">@AV4TAr</a></p>
+			<img src="pictures/tv.jpg" alt="">
+			<!-- photo by Kevin Simpson, http://www.flickr.com/photos/videocrab/116136642/ -->
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>ups, conection dropped...</h2>
+			<p align="center"><img src="pictures/ups.gif" height="300"></p>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+		<h2>¿para qué?</h2>
+		<ul>
+			<li>muchas pantallas en una misma sesión.</li>
+			<li>muchas ventanas en una pantalla.</li>
+			<li>mantener los procesos corriendo en background.</li>
+		</ul>
+		<p class="note">"Se me cortó la conexión mientras hacía la migración" - No más :)</p>
+		</div>
+	</section>
+	<section class="slide cover shout big-white">
+		<div>
+			<h2>screen</h2>
+			<img src="pictures/screen.jpg" alt="">
+			<!-- photo by James Moss, http://www.flickr.com/photos/j_moss/2326970599/ -->
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>screen basics</h2>
+			<ul>
+				<li>iniciar: <code>~ screen</code></li>
+				<li>listar sesiones: <code>~ screen -ls</code></li>
+				<li>attach: <code>~ screen -r [numero-sesion]</code></li>
+			</ul>
+			<p class="note">disponible en Linux / Mac / Cygwin</p>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>screen basics</h2>
+			<ul>
+				<li>Prefix: <code>Ctrl-a</code></li>
+				<li>crea ventana: <code>Ctrl-a c</code></li>
+				<li>lista ventanas: <code>Ctrl-a "</code></li>
+				<li>detach: <code>Ctrl-a d</code></li>
+			</ul>
+			<p class="note">quick reference <a href="http://bit.ly/screen-quick-reference" target="_blank">http://bit.ly/screen-quick-reference</a></p>
+		</div>
+	</section>
+	<section class="slide cover shout big-white">
+		<div>
+			<h2>Show time!</h2>
+			<img src="pictures/screen-showtime.jpg">
+			<!-- photo by Cole Ewert, http://www.flickr.com/photos/cole_ewert/8909713890/-->
+		</div>
+	</section>
+		<section class="slide cover shout big-white">
+		<div>
+			<h2>tmux</h2>
+			<img src="pictures/tmux.jpg" alt="">
+
+			<!-- photo by henx fotojam, http://www.flickr.com/photos/82304456@N00/388369618/in/pool-957003@N20/ -->
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>tmux</h2>
+				<ul>
+					<li>igual que screen pero mejor.</li>
+					<li class="next">cliente - servidor.</li>
+				</ul>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>tmux basics</h2>
+			<ul>
+				<li>iniciar: <code>~ tmux</code></li>
+				<li>listar sesiones: <code>~ tmux list-sessions</code></li>
+				<li>listar clientes conectados: <code>~ tmux list-clients</code></li>
+				<li>attach: <code>~ tmux attach-session [-t numero-sesion]</code></li>
+			</ul>
+			<p class="note">disponible en Linux / Mac / Cygwin</p>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>tmux basics</h2>
+			<ul>
+				<li>Prefix: <code>Ctrl-b</code></li>
+				<li>crea ventana: <code>Ctrl-b c</code></li>
+				<li class="next">dividir vertical: <code>Ctrl-b "</code></li>
+				<li class="next">dividir horizontal: <code>Ctrl-b %</code></li>
+				<li class="next">moverse de panel: <code>Ctrl-b flecha</pre></code></li>
+				<li class="next">detach: <code>Ctrl-b d</code></li>
+				<li class="next">ayuda: <code>Ctrl-b ?</code></li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>Demooooo</h2>
+			<p align="center"><img src="pictures/hacking.gif"></p>
+		</div>
+	</section>
+	<section class="slide cover">
+		<div>
+			<h2>un poco de magia <code>teamocil</code></h2>
+			<p>crear sesiones automáticamente con tmux</p>
+			<img src="pictures/magic.jpg">
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>¿qué es teamocil?</h2>
+			<p>Herramienta para crear sesiones, ventanas y paneles en tmux usando YAML.</p>
+			<pre><code>http://teamocil.com/</code></pre>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>teamocil basics</h2>
+			<pre>
+				<code>
+~ gem install teamocil
+~ mkdir ~/.teamocil
+~ teamocil --edit sample
+~ tmux
+~ teamocil sample
+				</code>
+			</pre>
+			<p class="note">disponible en Linux / Mac / Cygwin</p>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h3><code>~/.teamocil/cuatro.yml</code></h3>
+			<pre>
+				<code>windows:</code>
+				<code>- name: "cuatro-paneles"</code>
+				<code>  root: "~/Code/sample/www"</code>
+				<code>  layout: tiled</code>
+				<code>  panes:</code>
+				<code>    - cmd: "top"</code>
+				<code>    - cmd: "tail -f /var/log/apache2/error.log"</code>
+				<code>    - cmd: "tail -f /var/log/mail.log"</code>
+				<code>    - cmd: "ping google.com"</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide cover big-white shout">
+		<div>
+			<h2>live stuff</h2>
+			<img src="pictures/ventanas.jpg" alt="">
+			<!-- photo by elycefeliz, http://www.flickr.com/photos/elycefeliz/4655570777/ -->
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>gracias.</h2>
+			<p align="center"><img src="pictures/wow.gif" alt=""></p>
+			<h2><a href="https://twitter.com/AV4TAr" target="_blank">@AV4TAr</a></h2>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>recursos</h2>
+			<ul>
+				<li><a href="http://pragprog.com/book/bhtmux/tmux">tmux: Productive Mouse-Free Development - book</a></li>
+				<li><a href="http://www.youtube.com/watch?v=wKEGA8oEWXw">tmux Quick Start - youtube</a></li>
+				<li><a href="http://teamocil.com/">http://teamocil.com/</a></li>
+				<li>hecho con <a href="https://github.com/shower/shower">Showerjs</a></li>
+			</ul>
+		</div>
+	</section>
+	<p class="badge"><a href="https://github.com/AV4TAr/screen-tmux-intro">Fork me on Github</a></p>
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+</body>
+>>>>>>> master
 </html>
